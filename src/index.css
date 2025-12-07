@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base page styling */
+:root { --accent: #0b5cff; }
+html, body, #root { height: 100%; }
+body { @apply bg-gray-50 text-gray-900; }
+
+/* smooth transition between light/dark */
+:root { transition: color 150ms ease, background-color 150ms ease; }
+
+/* simple scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.3); border-radius: 9999px; }
